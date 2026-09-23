@@ -4,13 +4,15 @@
 **Module Version:** 1.0.0  
 **Status:** STABLE  
 **Authority:** ADMINISTRATIVE — Version / changelog / dependency-impact / migration / reconciliation authority  
-**Dependencies:** `PROJECT_CUSTOM_INSTRUCTIONS.md`, `00`–`14`, `PROJECT_WEBSITE_SPEC_TEMPLATE.md`, supporting continuity/status files  
+**Dependencies:** `PROJECT_CUSTOM_INSTRUCTIONS.md`, `00`–`14`, `PROJECT_WEBSITE_SPEC.md`, starter support files
 **Writes To:** this registry; release/reconciliation state  
 **Hands Off To:** future OS maintenance / change control / next release cycle  
 **Research Relationship:** `14_RESEARCH_EVIDENCE_INDEX.md` explains why a system change is justified; File 99 records what changed, version impact, dependency impact, migration, and reconciliation  
 **OS Release State:** RELEASED  
 **Registry Validated:** 2026-09-12  
 **Last Validated:** 2026-09-12
+
+**Starter repository integration (2026-09-23):** This file retains the historical v1.0.0 release-bundle record. In this repository, `PROJECT_WEBSITE_SPEC.md` is the current project contract, `NEW_PROJECT.md` is the startup guide, and Git history plus GitHub Quality CI carry current build status. Historical references below to `PROJECT_WEBSITE_SPEC_TEMPLATE.md`, `CURRENT_BUILD_STATUS.md`, `CHAT_HANDOFF_CONTEXT.md`, and `NEW_CHAT_STARTER_PROMPT.md` describe the source bundle; they are not additional files to load or authoritative copies in this starter.
 
 ## 1. PURPOSE
 
@@ -234,13 +236,11 @@ A6:
 
 ADMIN:
 99_CHANGELOG_AND_VERSION_REGISTRY.md
-CURRENT_BUILD_STATUS.md
 README.md
-CHAT_HANDOFF_CONTEXT.md
-NEW_CHAT_STARTER_PROMPT.md
+NEW_PROJECT.md
 
 PROJECT ARTIFACT:
-PROJECT_WEBSITE_SPEC_TEMPLATE.md
+PROJECT_WEBSITE_SPEC.md
 ```
 
 This is the reconciliation baseline, not a redefinition of authority.
@@ -277,13 +277,11 @@ Support artifacts use their own purpose-appropriate metadata and are not forced 
 | File | Role | Version Metadata | Current Administrative State |
 |---|---|---|---|
 | `PROJECT_CUSTOM_INSTRUCTIONS.md` | A1 always-on operating kernel | OS v1.0.0 context; no independent module semver required | CURRENT / reconciled |
-| `PROJECT_WEBSITE_SPEC_TEMPLATE.md` | Project-specific persistent contract template | Template Version 1.0.0; Last Validated 2026-09-12 | CURRENT / reconciled |
-| `README.md` | Bundle orientation / operating summary | Release-state metadata; no module semver | CURRENT / released |
-| `CURRENT_BUILD_STATUS.md` | Construction / release-state tracker | Not a semantic module | CURRENT / released |
-| `CHAT_HANDOFF_CONTEXT.md` | Current continuity artifact | Handoff Version 1.0.0 | CURRENT / released continuity |
-| `NEW_CHAT_STARTER_PROMPT.md` | Current startup helper | No module semver | CURRENT / released startup |
+| `PROJECT_WEBSITE_SPEC.md` | Project-specific persistent contract | Starter schema; project version/date recorded within | CURRENT / starter |
+| `README.md` | Starter front door | No module semver | CURRENT / starter |
+| `NEW_PROJECT.md` | Canonical new-project startup guide | No module semver | CURRENT / starter |
 
-Historical duplicate copies in the broader Library are not authoritative merely because their filenames match. The release-folder copy `/World-Class Website OS/v1.0` plus current File 99 state determines the active release set.
+Historical duplicate copies in the broader Library are not authoritative merely because their filenames match. In this starter, the tracked `docs/os/` files are the active OS copy; the release-folder entry in section 99 records the original bundle release.
 
 ## 20. EXPECTED MODULE HEADER CONTRACT
 
@@ -1441,4 +1439,3 @@ File 99 succeeds when the OS can change without silent drift; when versions mean
 The final release preserves the closed pre-release conflict history `RC-CONFLICT-001` through `RC-CONFLICT-010`.
 
 This release does not reopen the completed research phase and does not resolve `ARG-001 / URQ-001` by invention. Future changes enter File 14 evidence/provenance review when required, revise the owning module explicitly, and use File 99 for version, dependency, migration, and reconciliation control.
-

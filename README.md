@@ -1,20 +1,22 @@
 # World-Class Website Starter
 
-A reusable starter/template for future premium website projects, with a shared production workflow and dedicated spaces for strategy, research, art direction, implementation, experiments, assets, and quality assurance.
+A brand-neutral production system for creating distinct website projects. It is not a website theme or a finished design.
 
-Create each individual project from this repository. Develop project-specific websites in those new repositories, rather than directly inside this master starter.
+## **START A NEW PROJECT → [NEW_PROJECT.md](NEW_PROJECT.md)**
 
-Follow the operating rules in `AGENTS.md`. Complete the blank `PROJECT_WEBSITE_SPEC.md` for each new project before material work begins. This starter includes production documentation and a visually neutral Next.js App Router scaffold; it contains no project-specific website design.
+`PROJECT_WEBSITE_SPEC.md` is each project's current contract. `docs/os/` is the authoritative Website OS. `AGENTS.md` governs agent behavior, and `.agents/skills/website-os/SKILL.md` routes Codex through the relevant modules. Use `NEW_PROJECT.md` for the canonical startup sequence. Figma is optional.
 
-## Local development
+The repository includes a neutral Next.js scaffold, GitHub Quality CI, Playwright browser and accessibility checks, and Vercel deployment support through the Next.js application. Vercel project linkage is per project; previews require connecting the new repository to Vercel. Visual regression baselines activate only after a project target is approved.
 
-Use Node 24 (`nvm use`) and pnpm 12.5.1, as pinned in `package.json`.
+Use Node 24 and pnpm 12.5.1 as declared in `package.json`:
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
+pnpm typecheck
+pnpm lint
+pnpm build
+pnpm test:ci
 ```
 
-Run `pnpm typecheck`, `pnpm lint`, and `pnpm build` to validate the scaffold. Run `pnpm start` after a build to serve the production application.
-
-TypeScript and ESLint are pinned to the latest stable versions supported by the Next.js lint configuration and its plugins. Runtime dependencies are limited to Next.js, React, and React DOM. No external fonts or project-specific UI dependencies are included.
+Install the Playwright browsers if the test runner requests them. The neutral starter intentionally skips visual snapshot tests until an approved project baseline exists.

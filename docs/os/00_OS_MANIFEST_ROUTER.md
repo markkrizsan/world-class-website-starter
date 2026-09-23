@@ -163,7 +163,7 @@ Track, when relevant:
 - QA / launch-readiness state
 - open questions / validation requirements
 
-Use `PROJECT_WEBSITE_SPEC_TEMPLATE.md` as the persistent schema. Do not turn the spec into a transcript or issue tracker.
+Use `PROJECT_WEBSITE_SPEC.md` as the persistent schema and current project contract in this starter. Do not turn the spec into a transcript or issue tracker.
 
 ## 9. COMPLEXITY ROI ROUTING
 
