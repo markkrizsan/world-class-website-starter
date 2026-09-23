@@ -57,6 +57,11 @@ Load only the modules needed for the current task:
 
 All paths above are under `docs/os/`.
 
+## Acceptance Routing
+
+- Consequential reference-led visual or interaction work → `docs/acceptance/REFERENCE_FIDELITY_GATE.md` before approval.
+- Cross-system work before broad production → `docs/acceptance/VERTICAL_SLICE_GATE.md`; route failures to the highest wrong causal layer.
+
 ## Production Order
 
 Preserve:

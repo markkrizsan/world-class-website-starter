@@ -21,6 +21,8 @@ Consequential website work follows this order. Lower layers cannot override high
 - Use `docs/os/09_COMPLEXITY_ROI_OS.md` before approving advanced or unusually costly behavior. Treat `docs/os/08_PERFORMANCE_ACCESSIBILITY_SEMANTICS_OS.md` as continuous constraints, not a cleanup phase.
 - File 13 L3 Full Acceptance QA is mandatory before calling major work premium, elite, best-in-class, world-class, properly audited, or launch-ready. Hard-gate failures cannot be compensated for by visual quality or a numerical score.
 - Repair the highest wrong causal layer instead of repeatedly patching downstream symptoms. Report upstream problems rather than silently redesigning; never silently let implementation drift from `PROJECT_WEBSITE_SPEC.md`.
+- When reference-led work is consequential, use `docs/acceptance/REFERENCE_FIDELITY_GATE.md` before approving the applicable visual or interaction scope.
+- When several systems interact and broad production would make failure expensive, pass `docs/acceptance/VERTICAL_SLICE_GATE.md` before broad production. A failed gate routes backward to the highest wrong causal layer.
 - Never certify quality from source code alone. Inspect substantive visual and interactive work as a rendered artifact; verify desktop and mobile independently, run relevant tests, and compare reference-led work with approved targets.
 
 ## Engineering discipline
