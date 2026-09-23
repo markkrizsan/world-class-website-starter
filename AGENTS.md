@@ -25,6 +25,8 @@ Consequential website work follows this order. Lower layers cannot override high
 - When several systems interact and broad production would make failure expensive, pass `docs/acceptance/VERTICAL_SLICE_GATE.md` before broad production. A failed gate routes backward to the highest wrong causal layer.
 - Approved visual baselines must not be silently regenerated; diagnose a failing visual snapshot before any approved baseline update. Automated QA supplements, but never replaces, File 08 and File 13 acceptance.
 - Never certify quality from source code alone. Inspect substantive visual and interactive work as a rendered artifact; verify desktop and mobile independently, run relevant tests, and compare reference-led work with approved targets.
+- Before declaring a major project launch-ready, prepare a Launch Candidate handoff and run File 13 L3 acceptance. Use `docs/acceptance/LAUNCH_ACCEPTANCE_PROTOCOL.md` for final delivery; never infer acceptance from CI alone.
+- `WORLD-CLASS STANDARD MET` is a distinct gate above `LAUNCH READY`. Material post-acceptance changes require proportional re-evaluation.
 
 ## Engineering discipline
 

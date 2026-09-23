@@ -61,6 +61,7 @@ All paths above are under `docs/os/`.
 
 - Consequential reference-led visual or interaction work → `docs/acceptance/REFERENCE_FIDELITY_GATE.md` before approval.
 - Cross-system work before broad production → `docs/acceptance/VERTICAL_SLICE_GATE.md`; route failures to the highest wrong causal layer.
+- Final delivery → `docs/acceptance/LAUNCH_ACCEPTANCE_PROTOCOL.md`; prepare `docs/acceptance/LAUNCH_CANDIDATE_HANDOFF_TEMPLATE.md`, then record File 13 L3 results in `docs/acceptance/FINAL_ACCEPTANCE_REPORT_TEMPLATE.md`.
 
 ## Browser QA Routing
 
