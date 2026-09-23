@@ -11,7 +11,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "test:e2e": "pnpm build && playwright test tests/e2e",
+    "test:a11y": "pnpm build && playwright test tests/accessibility",
+    "test:visual": "pnpm build && playwright test tests/visual",
+    "test:browser": "pnpm build && playwright test",
+    "test:browser:update": "pnpm build && playwright test tests/visual --update-snapshots",
+    "test:ci": "playwright test"
   },
   "dependencies": {
     "next": "16.3.6",
@@ -19,6 +25,8 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
     "@types/node": "^24.13.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",

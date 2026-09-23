@@ -62,6 +62,11 @@ All paths above are under `docs/os/`.
 - Consequential reference-led visual or interaction work → `docs/acceptance/REFERENCE_FIDELITY_GATE.md` before approval.
 - Cross-system work before broad production → `docs/acceptance/VERTICAL_SLICE_GATE.md`; route failures to the highest wrong causal layer.
 
+## Browser QA Routing
+
+- Browser verification and evidence levels → `docs/acceptance/BROWSER_QA_PROTOCOL.md`.
+- Approved visual baselines and update decisions → `tests/visual/README.md`.
+
 ## Production Order
 
 Preserve:
